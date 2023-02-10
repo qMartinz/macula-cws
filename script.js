@@ -20,7 +20,10 @@ function corruptedSignin(){
     var user = document.getElementById("user");
     var pass = document.getElementById("pass");
     if(user.value == corruptedUsername && pass.value == corruptedPassword){
-        window.location = "YOUTUBE LINK";
+        window.location = "https://www.youtube.com/watch?v=ecQW1etKrFs";
+        document.querySelector(".worked").textContent = "";
+    } else if(user.value == username && pass.value == password){
+        window.location = "./system0.html";
         document.querySelector(".worked").textContent = "";
     } else {
         document.querySelector(".worked").textContent = "Username or Password are [CORRUPTED DATA].";
